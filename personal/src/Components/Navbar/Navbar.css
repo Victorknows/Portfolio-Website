@@ -23,3 +23,8 @@
 .nav-connect:hover{
     transform: scale(1.05);
 }
+h2{
+    color:#DA7C25;
+    font-family: outfit;
+    font-size: 30px;
+}
