@@ -17,7 +17,7 @@ const About = () => {
 
       <div className="about-section">
         <div className="about-left">
-          <img src={profile_img} alt="Victor Muhoro" loading="lazy" />
+          <img src={profile_img} alt="Victor Muhoro" />
         </div>
 
         <div className="about-right">
