@@ -1,30 +1,107 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+  position: relative;
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 20px;
 
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  transform: none;
+  position: static;
+  background: none;
+  height: auto;
+  flex-direction: row;
+  box-shadow: none;
 }
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  color: #DA7C25;
+  font-family: outfit;
+  font-size: 30px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #DA7C25;
+  margin-left: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .navbar {
+    margin: 20px 30px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.mobile-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background: linear-gradient(180deg, #1c0f2d, #4e0f64);
+    width: 270px;
+    height: 100vh;
+    padding: 80px 30px;
+    gap: 30px;
     font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
+    z-index: 999;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .nav-menu.mobile-open li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+  }
 }
-.nav-connect:hover{
-    transform: scale(1.05);
-}
-h2{
-    color:#DA7C25;
-    font-family: outfit;
-    font-size: 30px;
+
+/* Smooth entry animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

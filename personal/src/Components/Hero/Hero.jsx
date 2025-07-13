@@ -6,9 +6,9 @@ import resume from '../../../assets/Victor Muhoro Resume.pdf'; // Adjust the pat
 const Hero = () => {
   return (
     <div className='hero'>
-      <img src={profile} alt="Profile" />
+      <img src={profile} alt="Profile" loading="lazy"/>
       <h1><span> I'm Victor Muhoro, </span>Software Developer based in Nairobi, Kenya.</h1>
-      <p>Frontend Developer committed to leveraging technology to make a positive impact. Skilled in building scalable web applications using Python, JavaScript, and various databases. Adept at collaborating with teams to deliver high-quality solutions.</p>
+      <p>Nairobi-based developer making the internet less frustrating, one project at a time..</p>
       <div className="hero-action">
         <a href="https://ke.linkedin.com/in/victor-gathiga-a62aa62b3?original_referer=https%3A%2F%2Fwww.google.com%2F">
           <div className="hero-connect">Connect with me</div>
