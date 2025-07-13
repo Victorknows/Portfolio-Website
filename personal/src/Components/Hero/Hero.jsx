@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
   return (
     <div className='hero'>
-      <img src={profile} alt="Profile" />
+      <img src={profile} alt="Profile"  />
       <h1>
         <span>
           <Typewriter

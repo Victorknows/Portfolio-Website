@@ -125,7 +125,7 @@ a {
     margin-bottom: 60px;
   }
 }
-.hero img {
+/* .hero img {
   animation: jellyFloat 6s ease-in-out infinite;
 }
 
@@ -134,4 +134,4 @@ a {
   25% { transform: translateY(-5px) scale(1.01); }
   50% { transform: translateY(0px) scale(0.99); }
   75% { transform: translateY(5px) scale(1.02); }
-}
+} */
