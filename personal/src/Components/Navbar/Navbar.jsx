@@ -1,22 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../../../assets/logo.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('light');
+  };
+
+  useEffect(() => {
+    if (!darkMode) {
+      document.body.classList.add('light');
+    } else {
+      document.body.classList.remove('light');
+    }
+  }, [darkMode]);
 
   return (
     <div className='navbar'>
       <h2>Victor</h2>
 
-      {/* Hamburger icon */}
-      <div className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
+      <div className="nav-right">
+        {/* <div className="theme-toggle" onClick={toggleTheme}>
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </div> */}
+
+        <div className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
       </div>
 
-      {/* Navigation menu */}
       <ul className={menuOpen ? 'nav-menu mobile-open' : 'nav-menu'}>
         <li onClick={() => setMenuOpen(false)}><Link to="/">Home</Link></li>
         <li onClick={() => setMenuOpen(false)}><Link to="/about">About Me</Link></li>

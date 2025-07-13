@@ -31,15 +31,26 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <form className="contact-right">
-                <label htmlFor="">Your Name</label>
-                <input type="text" placeholder='Enter Your Name' name='name'/>
-                <label htmlFor="">Your Email</label>
-                <input type="email" placeholder='Enter your email' name='email'/>
-                <label htmlFor="">Write Your Message Here</label>
-                <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
-                <button type='submit' className="contact-submit">Submit now</button>
-            </form>
+            <form
+  className="contact-right"
+  action="mailto:victormuhoro7@gmail.com"
+  method="POST"
+  encType="text/plain"
+  onSubmit={() => alert('Message sent successfully!')}
+>
+  <label>Your Name</label>
+  <input type="text" name="name" placeholder="Enter Your Name" required />
+  
+  <label>Your Email</label>
+  <input type="email" name="email" placeholder="Enter Your Email" required />
+  
+  <label>Your Message</label>
+  <textarea name="message" rows="8" placeholder="Enter Your Message" required></textarea>
+  
+  <button type="submit" className="contact-submit">Submit Now</button>
+</form>
+
+
         </div>
     </div>
   )

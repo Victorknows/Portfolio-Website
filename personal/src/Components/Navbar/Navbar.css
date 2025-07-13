@@ -105,3 +105,34 @@ h2 {
     transform: translateX(0);
   }
 }
+@media (min-width: 1440px) {
+  .nav-connect {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    gap: 40px;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--text-color);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
