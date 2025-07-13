@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import profile from '../../../assets/DSC_0202.jpg';
-import resume from '../../../assets/victor resume (2).pdf';
+import resume from '../../../assets/victor resume (4).pdf';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
