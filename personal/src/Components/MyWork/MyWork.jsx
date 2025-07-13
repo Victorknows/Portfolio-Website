@@ -15,7 +15,7 @@ const MyWork = () => {
         <div className="mywork-container">
   {mywork_data.map((work, index) => (
     <div className="work-card" key={index}>
-      <img src={work.w_img} alt={work.w_name} loading="lazy" />
+      <img src={work.w_img} alt={work.w_name} />
       <div className="work-overlay">
         <h3>{work.w_name}</h3>
         <a
