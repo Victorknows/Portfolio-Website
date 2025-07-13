@@ -5,6 +5,8 @@ import project4_img from '../assets/project_4.svg'
 import project5_img from '../assets/project_5.svg'
 import project6_img from '../assets/project_6.svg'
 import project7_img from '../assets/Screenshot (101).png'
+import project8_img from '../assets/Screenshot (106).png'
+
 
 const mywork_data = [
     {
@@ -24,6 +26,12 @@ const mywork_data = [
         w_name: "Car Rentals",
         w_img: project7_img,
         link: "https://car-rental-gs.vercel.app/" 
+    },
+    {
+        w_no: 3,
+        w_name: "E-Commerce",
+        w_img: project8_img,
+        link: "https://foreverbuy.in/" 
     },
 
 ]
